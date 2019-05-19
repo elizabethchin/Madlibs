@@ -1,7 +1,8 @@
 <!doctype html>
 <html>
 <head>
-  <title>Hi There!</title>
+	<title>Hi There!</title>
+ 	<link rel="stylesheet" href="/static/madlibs.css">
 </head>
 <body>
 
@@ -9,9 +10,15 @@
 
 <form action="/madlib">
   What is your name? <input type="text" name="person"><br>
-  What is your favorite color? <input type="text" name="color"><br>
-  Pick a noun. <input type="text" name="noun"><br>
-  Pick an adjective? <input type="text" name="adjective"><br>
+  What is your favorite color? 
+  <input type="checkbox" name="color" value = "blue"> blue 
+  <input type="checkbox" name="color" value = "red" checked> red <br>
+  Pick a noun.
+  <input type="checkbox" name="noun" value = "Dog"> dog
+  <input type="checkbox" name="noun" value = "Cat"> cat<br>
+  Pick an adjective? 
+  <input type="checkbox" name="adjective" value = "bark"> bark
+  <input type="checkbox" name="adjective" value = "meow"> meow<br>
   <input type="submit">
 </form>
 

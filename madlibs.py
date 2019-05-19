@@ -51,14 +51,14 @@ def show_madlib_form():
 def show_madlib():
     """Creates madlib"""
     #print(request)
-    print("this IS FRICKEN IT:", request.data, "second thing i fricken want:", request.scheme)
+    print("this IS FRICKEN IT:", dir(request.args), "second item i need:", request.args.getlist("color"))
 
     person = request.args.get("person")
     color = request.args.get("color")
     noun = request.args.get("noun")
     adjective = request.args.get("adjective")
-
-    return render_template("madlibs.html",
+    template = choice(["madlibs.html", "madlibs_v2.html", "madlibs_v3.html"])
+    return render_template(template,
     						person=person,
     						color=color,
     						noun=noun,

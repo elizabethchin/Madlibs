@@ -1,0 +1,18 @@
+<!doctype html>
+<html>
+<head>
+  <title>base</title>
+</head>
+<body>
+    Hi {{ person }}! 
+    {% if compliments %}
+        I think you're:
+        <ul>
+            {% for compliment in compliments %}
+            <li>{{ compliment }}!</li>
+            {% endfor %}
+        </ul>
+
+</form>
+</body>
+</html>
